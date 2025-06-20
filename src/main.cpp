@@ -63,7 +63,7 @@ void loop(void)
     ServiceCharacteristic(ServiceUUID, CommandWriteCharacteristicUUID)->writeValue({0x02, 0x01, 0x01});
     Serial.println("Waiting");
     while (digitalRead(buttonP))
-      ConnectionCheck();
+      ConnectionCheck(); //checks connection while idle, if your anoied by the cammera turning on on its own due to this, just put yeld() here instead
 
     ServiceCharacteristic(ServiceUUID, CommandWriteCharacteristicUUID)->writeValue({0x03, 0x01, 0x01, 0x01});
     Serial.println("Photo taken");
