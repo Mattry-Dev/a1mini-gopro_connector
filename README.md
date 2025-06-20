@@ -9,7 +9,7 @@ this project is a very simple way to make your gopro shoot smooth timelapses on 
 
 # How it Works?
 
-when the board starts looks for any connectable GoPro camers with bluetooth capabilities, if found than the board waits until the button is pressed.
+when the board starts, it looks for any connectable GoPro camers with bluetooth capabilities, if found than the board waits until the button is pressed.
 on the button press the board sends a bluetooth command to start capture on the cammera, than it waits until the button is unpressed again and the cycle repeats.
 
 # printing:
